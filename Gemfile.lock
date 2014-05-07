@@ -15,6 +15,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bcrypt-ruby (3.0.1)
     bond (0.4.3)
     builder (3.2.2)
     i18n (0.6.9)
@@ -60,12 +61,15 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   activerecord
+  bcrypt-ruby
   pg
   sinatra
   sinatra-activerecord
@@ -73,3 +77,4 @@ DEPENDENCIES
   sinatra-redirect-with-flash
   tux
   unicorn
+  warden
